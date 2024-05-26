@@ -121,7 +121,7 @@ BATCH_SIZE = int(getenv('BATCH_SIZE', 64))
 
 CUSTOM_TUNING = True # Set this flag to true in order to use your custom dataset and tags
 # CUSTOM_TEXTS = join(DATA_DIR, 'custom-dataset.jl.gz') # Put your own data into the data dir
-CUSTOM_TEXTS = join(DATA_DIR, 'new_train.jl.gz') # Put your own data into the data dir
+CUSTOM_TEXTS = join(DATA_DIR, 'new_data.jl.gz') # Put your own data into the data dir
 TAGS = ['ORG', 'NUM', 'NAME_EMPLOYEE', 'LINK', 'DATE', 'ACRONYM', 'MAIL', 'TELEPHONE', 'TECH', 'NAME', 'PERCENT'] if CUSTOM_TUNING else [PER, LOC, ORG] # List all your custom tags 
 
 ################# END
